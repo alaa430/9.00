@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html manifest="cache.manifest">
+<head>
+    <meta charset="utf-8" />
+    <title>PS4 9.00 Exploit/Jailbreak Menu </title>
+	<meta content="PS4 Exploit/Jailbreak Host for firmware 9.00 containing latest payloads for  GoldHen etc. with option to cache and exploit offline" name="description">
+    <link rel="shortcut icon" href="favicon.png"></link>
+<link rel="stylesheet" href="main.css">
+	<link rel="icon" href="assets/favicon.png" sizes="32x32">
+</head>
+<body>
+<script>
+if (window.applicationCache.status=='0'){window.location.replace("cache.html");}
+</script>
+	<div class="logo"></div>
+		<div class="tab">
+		<div id="Jailbreak" class="tabcontent link">
+			<a href="jb.html#p0=payloads/mira-900.js&p1=payloads/goldhen_v2.3_fw9.js">اضغط هنا</a>
+		</div>
+		
+		</div>
+		
+		</div>
+		<div id="progresscon">
+			<div id="progressbar">
+				<span id="progressbarpc"></span>
+			</div>
+		</div>
+
+	</div>
+	
+	<script>
+		function opentab(evt, tabName) {
+		  var i, tabcontent, tablinks;
+		  tabcontent = document.getElementsByClassName("tabcontent");
+		  for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		  }
+		  tablinks = document.getElementsByClassName("tablinks");
+		  for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].className = tablinks[i].className.replace(" active", "");
+		  }
+		  document.getElementById(tabName).style.display = "block";
+		  evt.currentTarget.className += " active";
+		}
+	</script>
+</body>
+</html>
